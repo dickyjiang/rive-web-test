@@ -10,7 +10,7 @@
 <body>
     <section class="flex bg-white mx-auto p-12">
         <div class="flex justify-items-center mx-auto">
-            <div class="bg-red-500 flex-col">
+            <div class="flex-col">
                 <h2 class="text-2xl font-medium text-gray-500 ">
                     Quick Sign up process
                 </h2>
@@ -18,13 +18,13 @@
                     5 minutes signing up process
                 </p>
             </div>
-            <div class="outline-black">
+            <div class="">
                 <canvas id="canvas"></canvas>
                 <script src="https://unpkg.com/rive-js/dist/rive.js"></script>
                 <script>
                     // autoplays the first animation in the default artboard
                     new RiveAnimation({
-                        src: '/dist/rive.js/sign_up.riv',
+                        src: '/src/rive.js/sign_up.riv',
                         canvas: document.getElementById('canvas'),
                         autoplay: true,
                         loop: true,
