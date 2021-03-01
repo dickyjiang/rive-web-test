@@ -9,9 +9,9 @@
 </head>
 <body>
     <section class="flex-col mx-auto p-12 max-w-screen-lg justify-center">
-        <div class="flex mb-10 justify-center">
+        <div class="flex mb-10 justify-center max-w-xl mx-auto">
             <div class="flex-col pt-12 py-4">
-                <h2 class="text-2xl font-medium text-gray-500 ">
+                <h2 class="text-2xl font-semibold text-gray-500 ">
                     Quick Sign up process
                 </h2>
                 <p class="text-gray-300">
@@ -19,42 +19,41 @@
                 </p>
             </div>
             <div class="p-2">
-                <canvas id="canvas"></canvas>
+                <canvas class="p-2" id="canvas"></canvas>
                 <script src="https://unpkg.com/rive-js/dist/rive.js"></script>
                 <script>
                     // autoplays the first animation in the default artboard
                     new RiveAnimation({
-                        src: '/src/rive.js/sign_up.riv',
+                        src: '/src/sign_up.riv',
                         canvas: document.getElementById('canvas'),
                         autoplay: true,
-                        loop: true,
                     });
                 </script>
             </div>
 
         </div>
 
-        <div class="flex justify-center mx-auto">
-            <div class="flex-col pt-12 py-4">
-                <h2 class="text-2xl font-medium text-gray-500 ">
-                    Quick Sign up process
-                </h2>
-                <p class="text-gray-300">
-                    5 minutes signing up process
-                </p>
-            </div>
+        <div class="flex justify-center mx-auto max-w-xl">
+           
             <div class="p-2">
-                <canvas id="canvas"></canvas>
+                <canvas id="canvas-02"></canvas>
                 <script src="https://unpkg.com/rive-js/dist/rive.js"></script>
                 <script>
                     // autoplays the first animation in the default artboard
                     new RiveAnimation({
-                        src: '/src/rive.js/sign_up.riv',
-                        canvas: document.getElementById('canvas'),
+                        src: '/src/add-ngo.riv',
+                        canvas: document.getElementById('canvas-02'),
                         autoplay: true,
-                        loop: true,
                     });
                 </script>
+            </div>
+            <div class="flex-col pt-12 py-4">
+                <h2 class="text-2xl font-semibold text-gray-500 ">
+                    Add your Nonprofit 
+                </h2>
+                <p class="text-gray-300">
+                    You can link either to Charities,Non Profit, or your own Peer 2 Peer 
+                </p>
             </div>
 
         </div>
