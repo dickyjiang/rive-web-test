@@ -8,9 +8,9 @@
     <title>Document</title>
 </head>
 <body>
-    <section class="flex bg-white mx-auto p-12">
-        <div class="flex justify-items-center mx-auto">
-            <div class="flex-col">
+    <section class="flex-col mx-auto p-12 max-w-screen-lg justify-center">
+        <div class="flex mb-10 justify-center">
+            <div class="flex-col pt-12 py-4">
                 <h2 class="text-2xl font-medium text-gray-500 ">
                     Quick Sign up process
                 </h2>
@@ -18,7 +18,32 @@
                     5 minutes signing up process
                 </p>
             </div>
-            <div class="">
+            <div class="p-2">
+                <canvas id="canvas"></canvas>
+                <script src="https://unpkg.com/rive-js/dist/rive.js"></script>
+                <script>
+                    // autoplays the first animation in the default artboard
+                    new RiveAnimation({
+                        src: '/src/rive.js/sign_up.riv',
+                        canvas: document.getElementById('canvas'),
+                        autoplay: true,
+                        loop: true,
+                    });
+                </script>
+            </div>
+
+        </div>
+
+        <div class="flex justify-center mx-auto">
+            <div class="flex-col pt-12 py-4">
+                <h2 class="text-2xl font-medium text-gray-500 ">
+                    Quick Sign up process
+                </h2>
+                <p class="text-gray-300">
+                    5 minutes signing up process
+                </p>
+            </div>
+            <div class="p-2">
                 <canvas id="canvas"></canvas>
                 <script src="https://unpkg.com/rive-js/dist/rive.js"></script>
                 <script>
