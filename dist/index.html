@@ -9,12 +9,12 @@
 </head>
 <body>
     <section class="flex-col mx-auto p-12 max-w-screen-lg justify-center">
-        <div class="flex mb-10 justify-center max-w-xl mx-auto">
-            <div class="flex-col pt-12 py-4">
+        <div class="flex mb-10 justify-center max-w-xl mx-auto mb-40">
+            <div class="flex-col py-4 bg-contain bg-center bg-no-repeat" style="background-image: url(/src/blob_01.svg);">
                 <h2 class="text-2xl font-semibold text-gray-500 ">
                     Quick Sign up process
                 </h2>
-                <p class="text-gray-300">
+                <p class="text-gray-500">
                     5 minutes signing up process
                 </p>
             </div>
@@ -33,7 +33,7 @@
 
         </div>
 
-        <div class="flex justify-center mx-auto max-w-xl">
+        <div class="flex justify-center mx-auto max-w-xl mb-40">
            
             <div class="p-2">
                 <canvas id="canvas-02"></canvas>
@@ -47,13 +47,37 @@
                     });
                 </script>
             </div>
-            <div class="flex-col pt-12 py-4">
-                <h2 class="text-2xl font-semibold text-gray-500 ">
+            <div class="flex-col  py-4 bg-contain bg-center bg-no-repeat" style="background-image: url(/src/blob_02.svg) ;>
+                <h2 class="text-2xl font-semibold text-gray-500">
                     Add your Nonprofit 
                 </h2>
-                <p class="text-gray-300">
+                <p class="text-gray-500">
                     You can link either to Charities,Non Profit, or your own Peer 2 Peer 
                 </p>
+            </div>
+
+        </div>
+
+        <div class="flex mb-10 justify-center max-w-xl mx-auto">
+            <div class="flex-col  py-4 bg-contain bg-center bg-no-repeat" style="background-image: url(/src/blob_03.svg);">
+                <h2 class="text-2xl font-semibold text-gray-500 ">
+                    Link Business Affiliate
+                </h2>
+                <p class="text-gray-500">
+                    Select from our list of categories , or even create a new one* 
+                </p>
+            </div>
+            <div class="p-2">
+                <canvas class="p-2" id="canvas-03"></canvas>
+                <script src="https://unpkg.com/rive-js/dist/rive.js"></script>
+                <script>
+                    // autoplays the first animation in the default artboard
+                    new RiveAnimation({
+                        src: '/src/add-business.riv',
+                        canvas: document.getElementById('canvas-03'),
+                        autoplay: true,
+                    });
+                </script>
             </div>
 
         </div>
