@@ -57,13 +57,13 @@
                 </p>
             </div>
             <div class="p-2">
-                <canvas class="p-2" id="canvas"></canvas>
+                <canvas class="p-2" id="canvas-01"></canvas>
                 <script src="https://unpkg.com/rive-js@0.0.4/dist/rive.js"></script>
                 <script>
                     // autoplays the first animation in the default artboard
-                    new RiveAnimation({
+                    new Rive({
                         src: '/src/sign_up.riv',
-                        canvas: document.getElementById('canvas'),
+                        canvas: document.getElementById('canvas-01'),
                         autoplay: true,
                     });
                 </script>
@@ -75,10 +75,10 @@
            
             <div class="p-2">
                 <canvas id="canvas-02"></canvas>
-                <script src="https://unpkg.com/rive-js/dist/rive.js"></script>
+                <script src="https://unpkg.com/rive-js@0.0.4/dist/rive.js"></script>
                 <script>
                     // autoplays the first animation in the default artboard
-                    new RiveAnimation({
+                    new Rive({
                         src: '/src/add-ngo.riv',
                         canvas: document.getElementById('canvas-02'),
                         autoplay: true,
@@ -107,17 +107,16 @@
             </div>
             <div class="p-2">
                 <canvas class="p-2" id="canvas-03"></canvas>
-                <script src="https://unpkg.com/rive-js/dist/rive.js"></script>
+                <script src="https://unpkg.com/rive-js@0.0.4/dist/rive.js"></script>
                 <script>
                     // autoplays the first animation in the default artboard
-                    new RiveAnimation({
+                    new Rive({
                         src: '/src/add-business.riv',
                         canvas: document.getElementById('canvas-03'),
                         autoplay: true,
                     });
                 </script>
             </div>
-
         </div>
 
 
