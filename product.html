@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/tailwind.css">
     <title>Product</title>
 </head>
-<body class="">
+<body>
     <div class="bg-gradient-to-tl from-black to-gray-900 min-h-screen text-green-400">
         <nav class="p-10 flex justify-between text-md text-green-700 mb-10">
             <div class="px-10">
@@ -28,28 +28,27 @@
                 </button>
             </div>
         </nav>
-        <div class="p-4 item-center w-2/3 border rounded-lg border-green-600 mx-auto">
-            <div class="bg-green-600 bg-opacity-50 rounded w-full py-2 px-3">
-            </div>
-            <div class="p-4">
-                <div class="w-24 mb-4 ">
-                    <label class="mb-4" for="Email">User email</label>
-                    <input class="py-2 px-3 rounded focus-green-600 focus-ring-green-600" type="email" name="email" id="email" autocomplete="email" placeholder="email" required>
+        <section class="flex">
+                <div class="p-4 border rounded-lg border-green-600 mx-auto text-green-600">
+                    <div class="p-4">
+                        <div class="flex flex-col w-full mb-4 ">
+                            <label class="mb-4" for="Email">User email</label>
+                            <input class="bg-transparent border-green-600  border border-transparent py-2 px-3 rounded focus:outline-none focus:ring-2 focus:ring-purple-600" type="email" name="email" id="email" autocomplete="email" placeholder="email" required>
+                        </div>
+                            <div class="w-full mb-4 flex flex-col">
+                                <label class="mb-2" for="password">Password</label>
+                                <input class="bg-transparent border-green-600  border border-transparent py-2 px-3 rounded focus:outline-none focus:ring-2 focus:ring-purple-600 " type="password">
+                            </div>
+                            <div class="w-full mb-4 flex flex-col">
+                                <label for="Role">Role</label>
+                            </div>
+                            <select class="py-2 px-3 bg-transparent border-green-600 border border-transparent rounded focus:outline-none focus:ring-2 focus:ring-purple-600" name="role" id="role">Select Role
+                                <option class="w-full" value="Admin">Administrator</option>
+                            </select>
+                        </div>
                 </div>
-                    <div class="w-24 mb-4">
-                        <label for="password">Password</label>
-                        <input type="password">
-                    </div>
-                    <div>
-                        <label for="Role">Role</label>
-                    </div>
-                    <select class="py-2 px-3" name="role" id="role">Select Role
-                        <option value="Admin">Administrator</option>
-                    </select>
-                    
-                </div>
-                </div>
-        </div>
+        </section>
+    </div>
         
     </div>
 </body>
