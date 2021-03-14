@@ -13,7 +13,7 @@
             <div class="px-10">
                 logo
             </div>
-            <div class="flex justify-between flex-1 max-w-lg items-center">
+            <div class="hidden md:flex md:text-white  justify-between flex-1 max-w-lg items-center">
                 <div>
                     <a href="/">Product</a>
                 </div>
@@ -28,15 +28,16 @@
                 </button>
             </div>
         </nav>
-        <div class="mx-auto w-3/4 p-5 border-white border-8">
-            <h1 class="text-9xl font-extrabold text-white">
+        <div class="mx-auto w-3/4 p-5 border-white border-8 mb-12">
+            <h1 class="text-6xl md:text-9xl font-extrabold text-white">
                 WHAT</br>WE</br>WORRY?
             </h1>
         </div>
-        <div class="p-4 flex flex-col my-10 mx-auto w-1/2">
-            <input class="appearance-none  p-4 my-4 bg-none rounded" type="date">
+        <div class="p-4 items-center my-10 mx-auto w-1/2">
+            <input type="email" name="email" id="email" autocomplete="email" required class="w-full focus-ring-yellow-400">
+        
 
-            <select class=""  name="age" id="age">
+            <select class="py-2 px-3 rounded border border-gray-100 my-4 w-full "  name="age" id="age">
                 <option value="5-10">kids</option>
                 <option value="10-30">teen</option>
                 <option value="30-50">adult</option>
