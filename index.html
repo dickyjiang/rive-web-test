@@ -8,7 +8,11 @@
     <title>Share My Change</title>
 </head>
 <body>
-    <section class="min-h-screen bg-gradient-to-br from-purple-700 to-pink-500">
+    <section class="min-h-screen bg-gradient-to-br from-purple-700 to-pink-500" id="particles-js">
+        <!-- <div class="absolute z-0 w-full" id="particles-js">
+
+        </div> -->
+        <!-- navigation bar -->
         <nav class="p-10 flex justify-between text-md text-white mb-10">
             <div class="px-10">
                 logo
@@ -28,22 +32,36 @@
                 </button>
             </div>
         </nav>
-        <div class="mx-auto w-3/4 p-5 border-white border-8 mb-12">
-            <h1 class="text-6xl md:text-9xl font-extrabold text-white">
-                WHAT</br>WE</br>WORRY?
-            </h1>
+            <!-- hero section -->
+        <div class="flex mx-auto w-3/4 justify-center p-4 border-white border-4 mb-12 absolute inset-0 mt-40 ">
+            <div class="p-2 flex-1">
+                <h1 class="text-6xl md:text-8xl font-bold text-white">
+                    WHAT</br>WE</br>WORRY?
+                </h1>
+            </div>
+            <div class="p-4 items flex-1 text-white border-4 border-white">
+                <div class="w-full">
+                    <label for="email">email</label>
+                    <input type="email" name="email" id="email" autocomplete="email" required class="w-full focus-ring-yellow-400">
+                </div>
+                <div class="w-full">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" autocomplete="current-password" required class="w-full">
+                </div>
+                <div class="">
+                    <label for="role">Role</label>
+                    <select name="role" id="role">
+                        <option value="admin">admin</option>
+                        <option value="supervisor">Supervisor</option>
+                        <option value="sales">sales</option>
+                        <option value="guest">guest</option>
+                    </select>
+                </div>
+    
+            </div>
         </div>
-        <div class="p-4 items-center my-10 mx-auto w-1/2">
-            <input type="email" name="email" id="email" autocomplete="email" required class="w-full focus-ring-yellow-400">
-        
-
-            <select class="py-2 px-3 rounded border border-gray-100 my-4 w-full "  name="age" id="age">
-                <option value="5-10">kids</option>
-                <option value="10-30">teen</option>
-                <option value="30-50">adult</option>
-            </select>
-
-        </div>
+        <!-- form div -->
+       
 
     </section>
     <section class="flex-col mx-auto p-12 max-w-screen-lg justify-center">
@@ -124,6 +142,11 @@
     <footer class="flex h-40 bg-gray-800">
         footer
     </footer>
+
+    <script src="/src/particles.js/particles.js"></script> 
+    <script type="text/javascript">
+    particlesJS("particles-js", {"particles":{"number":{"value":60,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.25,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.3,"width":1},"move":{"enable":true,"speed":3,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+    </script>
     
 </body>
 </html>
